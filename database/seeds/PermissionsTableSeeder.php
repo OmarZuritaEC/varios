@@ -820,6 +820,154 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => '203',
                 'title' => 'assets_history_access',
             ],
+            [
+                'id'    => '204',
+                'title' => 'basic_c_r_m_access',
+            ],
+            [
+                'id'    => '205',
+                'title' => 'crm_status_create',
+            ],
+            [
+                'id'    => '206',
+                'title' => 'crm_status_edit',
+            ],
+            [
+                'id'    => '207',
+                'title' => 'crm_status_show',
+            ],
+            [
+                'id'    => '208',
+                'title' => 'crm_status_delete',
+            ],
+            [
+                'id'    => '209',
+                'title' => 'crm_status_access',
+            ],
+            [
+                'id'    => '210',
+                'title' => 'crm_customer_create',
+            ],
+            [
+                'id'    => '211',
+                'title' => 'crm_customer_edit',
+            ],
+            [
+                'id'    => '212',
+                'title' => 'crm_customer_show',
+            ],
+            [
+                'id'    => '213',
+                'title' => 'crm_customer_delete',
+            ],
+            [
+                'id'    => '214',
+                'title' => 'crm_customer_access',
+            ],
+            [
+                'id'    => '215',
+                'title' => 'crm_note_create',
+            ],
+            [
+                'id'    => '216',
+                'title' => 'crm_note_edit',
+            ],
+            [
+                'id'    => '217',
+                'title' => 'crm_note_show',
+            ],
+            [
+                'id'    => '218',
+                'title' => 'crm_note_delete',
+            ],
+            [
+                'id'    => '219',
+                'title' => 'crm_note_access',
+            ],
+            [
+                'id'    => '220',
+                'title' => 'crm_document_create',
+            ],
+            [
+                'id'    => '221',
+                'title' => 'crm_document_edit',
+            ],
+            [
+                'id'    => '222',
+                'title' => 'crm_document_show',
+            ],
+            [
+                'id'    => '223',
+                'title' => 'crm_document_delete',
+            ],
+            [
+                'id'    => '224',
+                'title' => 'crm_document_access',
+            ],
+            [
+                'id'    => '225',
+                'title' => 'product_management_access',
+            ],
+            [
+                'id'    => '226',
+                'title' => 'product_category_create',
+            ],
+            [
+                'id'    => '227',
+                'title' => 'product_category_edit',
+            ],
+            [
+                'id'    => '228',
+                'title' => 'product_category_show',
+            ],
+            [
+                'id'    => '229',
+                'title' => 'product_category_delete',
+            ],
+            [
+                'id'    => '230',
+                'title' => 'product_category_access',
+            ],
+            [
+                'id'    => '231',
+                'title' => 'product_tag_create',
+            ],
+            [
+                'id'    => '232',
+                'title' => 'product_tag_edit',
+            ],
+            [
+                'id'    => '233',
+                'title' => 'product_tag_show',
+            ],
+            [
+                'id'    => '234',
+                'title' => 'product_tag_delete',
+            ],
+            [
+                'id'    => '235',
+                'title' => 'product_tag_access',
+            ],
+            [
+                'id'    => '236',
+                'title' => 'product_create',
+            ],
+            [
+                'id'    => '237',
+                'title' => 'product_edit',
+            ],
+            [
+                'id'    => '238',
+                'title' => 'product_show',
+            ],
+            [
+                'id'    => '239',
+                'title' => 'product_delete',
+            ],
+            [
+                'id'    => '240',
+                'title' => 'product_access',
+            ],
         ];
 
         Permission::insert($permissions);
