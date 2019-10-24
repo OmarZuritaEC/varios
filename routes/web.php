@@ -180,6 +180,37 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Assets Histories
     Route::resource('assets-histories', 'AssetsHistoryController', ['except' => ['create', 'store', 'edit', 'update', 'show', 'destroy']]);
 
+    // Crm Statuses
+    Route::delete('crm-statuses/destroy', 'CrmStatusController@massDestroy')->name('crm-statuses.massDestroy');
+    Route::resource('crm-statuses', 'CrmStatusController');
+
+    // Crm Customers
+    Route::delete('crm-customers/destroy', 'CrmCustomerController@massDestroy')->name('crm-customers.massDestroy');
+    Route::resource('crm-customers', 'CrmCustomerController');
+
+    // Crm Notes
+    Route::delete('crm-notes/destroy', 'CrmNoteController@massDestroy')->name('crm-notes.massDestroy');
+    Route::resource('crm-notes', 'CrmNoteController');
+
+    // Crm Documents
+    Route::delete('crm-documents/destroy', 'CrmDocumentController@massDestroy')->name('crm-documents.massDestroy');
+    Route::post('crm-documents/media', 'CrmDocumentController@storeMedia')->name('crm-documents.storeMedia');
+    Route::resource('crm-documents', 'CrmDocumentController');
+
+    // Product Categories
+    Route::delete('product-categories/destroy', 'ProductCategoryController@massDestroy')->name('product-categories.massDestroy');
+    Route::post('product-categories/media', 'ProductCategoryController@storeMedia')->name('product-categories.storeMedia');
+    Route::resource('product-categories', 'ProductCategoryController');
+
+    // Product Tags
+    Route::delete('product-tags/destroy', 'ProductTagController@massDestroy')->name('product-tags.massDestroy');
+    Route::resource('product-tags', 'ProductTagController');
+
+    // Products
+    Route::delete('products/destroy', 'ProductController@massDestroy')->name('products.massDestroy');
+    Route::post('products/media', 'ProductController@storeMedia')->name('products.storeMedia');
+    Route::resource('products', 'ProductController');
+
     Route::get('system-calendar', 'SystemCalendarController@index')->name('systemCalendar');
     Route::get('messenger', 'MessengerController@index')->name('messenger.index');
     Route::get('messenger/create', 'MessengerController@createTopic')->name('messenger.createTopic');

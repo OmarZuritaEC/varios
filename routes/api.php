@@ -118,4 +118,28 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Assets
     Route::post('assets/media', 'AssetApiController@storeMedia')->name('assets.storeMedia');
     Route::apiResource('assets', 'AssetApiController');
+
+    // Crm Statuses
+    Route::apiResource('crm-statuses', 'CrmStatusApiController');
+
+    // Crm Customers
+    Route::apiResource('crm-customers', 'CrmCustomerApiController');
+
+    // Crm Notes
+    Route::apiResource('crm-notes', 'CrmNoteApiController');
+
+    // Crm Documents
+    Route::post('crm-documents/media', 'CrmDocumentApiController@storeMedia')->name('crm-documents.storeMedia');
+    Route::apiResource('crm-documents', 'CrmDocumentApiController');
+
+    // Product Categories
+    Route::post('product-categories/media', 'ProductCategoryApiController@storeMedia')->name('product-categories.storeMedia');
+    Route::apiResource('product-categories', 'ProductCategoryApiController');
+
+    // Product Tags
+    Route::apiResource('product-tags', 'ProductTagApiController');
+
+    // Products
+    Route::post('products/media', 'ProductApiController@storeMedia')->name('products.storeMedia');
+    Route::apiResource('products', 'ProductApiController');
 });
